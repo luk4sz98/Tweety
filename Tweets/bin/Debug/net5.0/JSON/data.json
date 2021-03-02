@@ -1,0 +1,143 @@
+﻿[
+  {
+    "DeviceName": "Lenovo Legion Phone Duel",
+    "Performance": 9918,
+    "ScreenSize": 6.65,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 3.1 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Asus ROG Phone 3",
+    "Performance": 9791,
+    "ScreenSize": 6.69,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 3.1 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.4
+  },
+  {
+    "DeviceName": "Motorola Edge Plus",
+    "Performance": 9439,
+    "ScreenSize": 6.7,
+    "HardwareDescription": "Snapdragon 865 Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Meizu 17",
+    "Performance": 9428,
+    "ScreenSize": 6.6,
+    "HardwareDescription": "Snapdragon 865 Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Asus ROG Phone 3 Strix",
+    "Performance": 9402,
+    "ScreenSize": 6.59,
+    "HardwareDescription": "Snapdragon 865 Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.4
+  },
+  {
+    "DeviceName": "Meizu 17 Pro",
+    "Performance": 9308,
+    "ScreenSize": 6.6,
+    "HardwareDescription": "Snapdragon 865 Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Samsung Galaxy Note20 Ultra",
+    "Performance": 9294,
+    "ScreenSize": 6.9,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 3.1 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.6
+  },
+  {
+    "DeviceName": "Xiaomi Redmi K30S",
+    "Performance": 9175,
+    "ScreenSize": 6.67,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 3.1 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.6
+  },
+  {
+    "DeviceName": "Vivo iQ00 Neo3 5G",
+    "Performance": 9166,
+    "ScreenSize": 6.57,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.1
+  },
+  {
+    "DeviceName": "Xiaomi Black Shark 3 Pro",
+    "Performance": 9103,
+    "ScreenSize": 7.1,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "ZTE Nubla Red Magic 5S",
+    "Performance": 9096,
+    "ScreenSize": 6.65,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Samsung Galaxy S20 FE 5G",
+    "Performance": 9063,
+    "ScreenSize": 6.6,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.4
+  },
+  {
+    "DeviceName": "Xiaomi Black Shark",
+    "Performance": 9038,
+    "ScreenSize": 6.67,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.1
+  },
+  {
+    "DeviceName": "OnePlus 8",
+    "Performance": 9010,
+    "ScreenSize": 6.55,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.3
+  },
+  {
+    "DeviceName": "OnePlus 8 5G UW",
+    "Performance": 9003,
+    "ScreenSize": 6.55,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Xiaomi Mi 11",
+    "Performance": 8993,
+    "ScreenSize": 6.81,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 660 ",
+    "Popularity": 0.3
+  },
+  {
+    "id": "17",
+    "DeviceName": "Samsung Galaxy S20 Ultra 5G",
+    "Performance": 8977,
+    "ScreenSize": 6.9,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.3
+  },
+  {
+    "DeviceName": "Vivo iQ00 3 5G",
+    "Performance": 8963,
+    "ScreenSize": 6.44,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.0
+  },
+  {
+    "DeviceName": "Samsung Galaxy S20 5G",
+    "Performance": 8960,
+    "ScreenSize": 6.2,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 0.2
+  },
+  {
+    "DeviceName": "Xiaomi Mi 10",
+    "Performance": 8931,
+    "ScreenSize": 6.67,
+    "HardwareDescription": "Snapdragon 865 Plus Up to 2.84 GHz single-core Kryo 585, 2.42 GHz tri-core Kryo 585 & 1.8 GHz quad-core Kryo 585 Adreno 650 ",
+    "Popularity": 1.6
+  }
+]

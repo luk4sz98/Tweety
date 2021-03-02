@@ -1,0 +1,168 @@
+﻿@model IEnumerable<Tweets.Models.Smartphone>
+
+@{
+    ViewData["Title"] = "Ranks";
+}
+
+<div class="row">
+    <h1 class="text-center text-light mt-3">
+        TOP 20 smartfonów na androida
+    </h1>
+</div>
+<div class="row my-4">
+
+    <div class="dropdown col-4 col-md-2 col-lg-1 me-lg-3">
+        <button class="btn btn-dark dropdown-toggle " type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+            Filtruj po
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <li>
+                <button id="deviceName" class="btn dropdown-item">nazwie urządzenia</button>
+            </li>
+            <li class="dropdown-divider d-none d-md-block"></li>
+            <li>
+                <button id="screenSize" class="btn dropdown-item d-none d-md-block">
+                    wielkości ekranu
+                </button>
+            </li>
+        </ul>
+    </div>
+    <div id="inputField" class="col-8 col-md-10 col-lg-3 ms-lg-3">
+        <input id="filtruj" type="text" class="form-control" placeholder="Wprowadź frazę..."
+               onfocus="this.value=''">
+    </div>
+</div>
+<div class="row">
+    <div id="option">
+
+        <input type="radio" class="btn-check btn-sm" name="options" id="lessThan" autocomplete="off"
+               checked>
+        <label class="btn btn-sm btn-dark" for="lessThan">mniejszy niż</label>
+
+        <input type="radio" class="btn-check btn-sm mx-2" name="options" id="equal" autocomplete="off"
+               checked>
+        <label class="btn btn-sm btn-dark mx-2" for="equal">równe</label>
+        <input type="radio" class="btn-check btn-sm" name="options" id="moreThan" autocomplete="off"
+               checked>
+        <label class="btn btn-sm btn-dark" for="moreThan">większy niż</label>
+
+    </div>
+    <div class="row my-4">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+            <table id="tabela" class="table table-striped table-hover text-white align-middle">
+                <thead>
+                    <tr>
+                        <th class="col-1" data-field="rank">
+                            Ranking
+                        </th>
+                        <th class="col-2" data-field="device">
+                            Urządzenie
+                        </th>
+                        <th class="col-1" data-field="performance">
+                            Moc
+                        </th>
+                        <th class="col-1 d-none d-md-table-cell" data-field="screen">
+                            Ekran
+                        </th>
+                        <th class="col-4 d-none d-md-table-cell" data-field="hardware">
+                            Specyfikacja
+                        </th>
+                        <th class="col-1 d-none d-md-table-cell text-center" data-field="popularity">
+                            Popularność
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var smartphone in ViewBag.smartphones)
+                    {
+                        <tr>
+                            <td class="ms-5">@smartphone.Id</td>
+                            <td>@smartphone.DeviceName</td>
+                            <td>@smartphone.Performance</td>
+                            <td class="d-none d-md-table-cell">@smartphone.ScreenSize</td>
+                            <td class="d-none d-md-table-cell">@smartphone.HardwareDescription</td>
+                            <td class="d-none d-md-table-cell text-center">@smartphone.Popularity</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+            <div class="row">
+                <nav aria-label="Page navigation ">
+                    <ul class="pagination">
+                        @{
+                            int position;
+                            int pageCurrent = ViewBag.pageCurrent;
+                            float numSize = ViewBag.numSize;
+                            if (pageCurrent > 1)
+                            {
+                                <li class="page-item">
+                                    <a aria-label="Previosu" class="page-link " id="pageIndexer" href="@Url.Action("Index", "Ranks", new {page = pageCurrent-1 })" tabRanks="-1">
+                                        <span aria-hidden="true">&#10094;</span>
+                                    </a>
+                                </li>
+                            }
+                            for (position = 1; position <= numSize; position++)
+                            {
+                                if (position == pageCurrent)
+                                {
+                                    <li class="page-item active"><a class="page-link" href="@Url.Action("Index", "Ranks" , new {  page = position })">@position</a></li>
+                                }
+                                else
+                                {
+                                    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "Ranks", new { page = position })">@position</a></li>
+                                }
+                            }
+                            if (pageCurrent > 0 && pageCurrent < numSize)
+                            {
+                                <li class="page-item">
+                                    <a aria-label="Next" class="page-link" href="@Url.Action("Index", "Ranks", new {page = pageCurrent+1 })" tabRanks="-1">
+                                        <span aria-hidden="true">&#10095;</span>
+                                    </a>
+                                </li>
+                            } }
+                    </ul>
+                </nav>
+            </div>
+            <div class="row">
+                @using (Html.BeginForm("Index", "Button"))
+                {
+                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="5">
+                        5
+                    </button>
+                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="10">
+                        10
+                    </button>
+                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="20">
+                        20
+                    </button>
+                }
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Styles {
+    <link rel="stylesheet" href="~/css/ranks.css" />
+}
+
+@*@section Scripts {
+    <script>
+        $(function () {
+            $("#pageIndexer").bind("click", function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 2000);
+            });
+            return false;
+        })
+
+
+    </script>
+}*@
+
+@*@section Scripts {
+        <script src="~/js/tableData.js" asp-append-version="true"></script>
+    }*@

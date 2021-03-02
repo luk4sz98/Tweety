@@ -1,0 +1,210 @@
+﻿
+body {
+    font-family: 'Alegreya', serif;
+    background: rgb(148, 148, 148);
+    background: radial-gradient(circle, rgba(148, 148, 148, 1) 20%, rgba(116, 116, 116, 1) 92%);
+    margin: 0;
+    height: 100vh;
+}
+
+footer {
+    min-height: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+label {
+    color: #f7f9fa;
+}
+
+th {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+.table {
+    font-size: 18px;
+}
+
+#option {
+    display: none;
+}
+
+img {
+    border-radius: 10%;
+}
+
+.to-top {
+    text-align: center;
+}
+
+#inputField {
+    display: none;
+}
+
+
+#scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 0px;
+    opacity: 0.8;
+    z-index:1;
+}
+
+#scroll-to-top:hover {
+    opacity: 1;
+}
+
+
+#logo,
+#tekstLogo {
+    display: none;
+}
+
+
+
+.carousel-caption h5 {
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 100px;
+}
+
+.carousel-caption p {
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.carousel-caption a {
+    text-transform: uppercase;
+    background: #262626;
+    padding: 10px 30px;
+    display: inline-block;
+    color: white;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 2rem;
+}
+
+.navbar a {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.dropdown-item:hover {
+    color: #f7f9fa;
+    background: #212529;
+}
+
+
+
+footer p,
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+ul.social {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul.social li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline;
+    padding: 0;
+}
+
+
+
+.inner {
+    overflow: hidden;
+    border-radius: 10%;
+}
+
+.inner img {
+    transition: all 1.5s ease;
+}
+
+.inner:hover img {
+    transform: scale(1.5);
+}
+
+
+
+footer .fa {
+    font-size: 30px;
+}
+
+footer .fa:hover {
+    color: #68a0d2;
+}
+
+
+@media screen and (min-width: 992px) {
+    #tekstLogo {
+        display: inline;
+    }
+
+    .navbar {
+        padding: 1rem 0;
+    }
+}
+
+@media screen and (min-width:362px) and (max-width: 992px) {
+    #logo {
+        display: inline;
+    }
+
+    .navbar-nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:361px) {
+    main {
+        padding: 2.5rem 0rem;
+    }
+
+    #logo {
+        display: inline;
+    }
+
+    .navbar-nav a {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer span {
+        font-size: 12px;
+    }
+
+    #option {
+        display: none;
+    }
+
+
+}
+
