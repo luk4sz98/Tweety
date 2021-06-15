@@ -1,6 +1,5 @@
 ﻿
 
-@model Tweets.Models.Tweet
 @{
     ViewData["Title"] = "Ranks";
 }
@@ -8,7 +7,7 @@
 <div class="row">
     @using (Html.BeginForm("SearchTweets", "Button"))
     {
-        <input class="mt-2" type="text" name="inputValue" placeholder="DAWEJ FFRAZĘĘĘ" />
+        <input class="mt-2" type="text" name="inputValue" placeholder="Wpisz" />
         <button type="submit" class="btn bg-dark text-light">Szukaj</button>
     }
 
@@ -50,8 +49,9 @@
                     float numSize = ViewBag.numSize;
                     if (pageCurrent > 1)
                     {
+                        
                         <li class="page-item">
-                            <a aria-label="Previosu" class="page-link " id="pageIndexer" href="@Url.Action("Index", "Tweets", new {page = pageCurrent-1 })" tabRanks="-1">
+                            <a aria-label="Previosu" class="page-link " id="pageIndexer" asp-controller="Tweets" asp-action="Index" asp-route-page=@pageCurrent-1 tabRanks="-1">
                                 <span aria-hidden="true">&#10094;</span>
                             </a>
                         </li>

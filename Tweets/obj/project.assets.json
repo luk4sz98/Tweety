@@ -7255,11 +7255,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Tweets\\Tweets\\Tweets.csproj",
+      "projectUniqueName": "C:\\Users\\lukas\\Desktop\\Tweety\\Tweety\\Tweets\\Tweets.csproj",
       "projectName": "Tweets",
-      "projectPath": "C:\\Users\\lukas\\Desktop\\Tweets\\Tweets\\Tweets.csproj",
+      "projectPath": "C:\\Users\\lukas\\Desktop\\Tweety\\Tweety\\Tweets\\Tweets.csproj",
       "packagesPath": "C:\\Users\\lukas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lukas\\Desktop\\Tweets\\Tweets\\obj\\",
+      "outputPath": "C:\\Users\\lukas\\Desktop\\Tweety\\Tweety\\Tweets\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\lukas\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -7329,7 +7329,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

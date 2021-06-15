@@ -45,8 +45,8 @@ namespace Tweets.Controllers
         {
             var twitter = new TweeterAPI
             {
-                ConsumerKey = "API key",
-                ConsumerSecretKey = "API secret key"
+                ConsumerKey = "AtKwXQcRmuFgY9kgIdnkbQoOr",
+                ConsumerSecretKey = "LRWPDwc2SMXrjGZOVhLecInlBf7xmUG6BjSw2xkm8rbOuJkIXu"
             };
 
             lista = twitter.GetTwittsWithKeywords($"{searchValue}").Result;
