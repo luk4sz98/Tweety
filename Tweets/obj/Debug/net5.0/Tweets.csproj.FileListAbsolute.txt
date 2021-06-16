@@ -864,3 +864,10 @@ C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\obj\Debug\net5.0\Tweets.dll
 C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\obj\Debug\net5.0\ref\Tweets.dll
 C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\obj\Debug\net5.0\Tweets.pdb
 C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\obj\Debug\net5.0\Tweets.genruntimeconfig.cache
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\JetBrains.Annotations.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\PagedList.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\PagedList.Mvc.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\X.PagedList.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\X.PagedList.Mvc.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\bin\Debug\net5.0\X.PagedList.Mvc.Core.dll
+C:\Users\lukas\Desktop\Tweety\Tweety\Tweets\obj\Debug\net5.0\Razor\Views\Ranks\_SmartphoneTableDataPartial.cshtml.g.cs

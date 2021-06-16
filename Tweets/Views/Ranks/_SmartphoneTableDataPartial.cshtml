@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Tweets.Models.Smartphone>
+@foreach (var smartphone in Model)
+{
+    <tr>
+        <td class="ms-5">@smartphone.Id</td>
+        <td>@smartphone.DeviceName</td>
+        <td>@smartphone.Performance</td>
+        <td class="d-none d-md-table-cell">@smartphone.ScreenSize</td>
+        <td class="d-none d-md-table-cell">@smartphone.HardwareDescription</td>
+        <td class="d-none d-md-table-cell text-center">@smartphone.Popularity</td>
+    </tr>
+}

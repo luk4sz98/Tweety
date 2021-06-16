@@ -2,15 +2,25 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Tweets.Interfaces;
 using Tweets.Models;
 
 namespace Tweets.Controllers
 {
     public class TweetsController : Controller
     {
+
         public static string searchValue;
         private static IEnumerable<Tweet> lista;
-        private static readonly int pageSize = 2;
+        private static readonly int pageSize = 3;
+
+        readonly ITweetService _tweetService;
+
+        public TweetsController(ITweetService tweetService)
+        {
+            _tweetService = tweetService;
+        }
+        
         public IActionResult Index(int? page)
         {
             if (lista != null)
@@ -39,18 +49,12 @@ namespace Tweets.Controllers
                 ViewBag.info = "Błąd";
                 return View();
         }
-           
 
-        public IActionResult GetTweets()
+        public IActionResult GetTweets(string inputValue)
         {
-            var twitter = new TweeterAPI
-            {
-                ConsumerKey = "AtKwXQcRmuFgY9kgIdnkbQoOr",
-                ConsumerSecretKey = "LRWPDwc2SMXrjGZOVhLecInlBf7xmUG6BjSw2xkm8rbOuJkIXu"
-            };
-
-            lista = twitter.GetTwittsWithKeywords($"{searchValue}").Result;
-            return RedirectToAction("Index", lista);
+            lista = _tweetService.GetTweets(inputValue);
+            return RedirectToAction("Index");
         }
+           
     }
 }

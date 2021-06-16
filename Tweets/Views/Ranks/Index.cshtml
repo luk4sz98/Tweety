@@ -29,7 +29,7 @@
         </ul>
     </div>
     <div id="inputField" class="col-8 col-md-10 col-lg-3 ms-lg-3">
-        <input id="filtruj" type="text" class="form-control" placeholder="Wprowadź frazę..."
+        <input id="filtruj" type="text" class="smartphones-filter-input form-control" placeholder="Wprowadź frazę..."
                onfocus="this.value=''">
     </div>
 </div>
@@ -73,19 +73,8 @@
                         </th>
                     </tr>
                 </thead>
-                <tbody>
-
-                    @foreach (var smartphone in ViewBag.smartphones)
-                    {
-                        <tr>
-                            <td class="ms-5">@smartphone.Id</td>
-                            <td>@smartphone.DeviceName</td>
-                            <td>@smartphone.Performance</td>
-                            <td class="d-none d-md-table-cell">@smartphone.ScreenSize</td>
-                            <td class="d-none d-md-table-cell">@smartphone.HardwareDescription</td>
-                            <td class="d-none d-md-table-cell text-center">@smartphone.Popularity</td>
-                        </tr>
-                    }
+                <tbody class="smartphones-table-data">
+                    <partial name="_SmartphoneTableDataPartial" model="Model" />
                 </tbody>
             </table>
             <div class="row">
@@ -98,7 +87,7 @@
                             if (pageCurrent > 1)
                             {
                                 <li class="page-item">
-                                    <a aria-label="Previosu" class="page-link " id="pageIndexer" href="@Url.Action("Index", "Ranks", new {page = pageCurrent-1 })" tabRanks="-1">
+                                    <a aria-label="Previosu" class="page-link " id="pageIndexer" href="@Url.Action("Index", "Ranks", new {page = pageCurrent-1, _pageSize = ViewBag.pageSize })" tabRanks="-1">
                                         <span aria-hidden="true">&#10094;</span>
                                     </a>
                                 </li>
@@ -107,17 +96,17 @@
                             {
                                 if (position == pageCurrent)
                                 {
-                                    <li class="page-item active"><a class="page-link" href="@Url.Action("Index", "Ranks" , new {  page = position })">@position</a></li>
+                                    <li class="page-item active"><a class="page-link" href="@Url.Action("Index", "Ranks" , new {  page = position, _pageSize = ViewBag.pageSize })">@position</a></li>
                                 }
                                 else
                                 {
-                                    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "Ranks", new { page = position })">@position</a></li>
+                                    <li class="page-item"><a class="page-link" href="@Url.Action("Index", "Ranks", new { page = position, _pageSize = ViewBag.pageSize })">@position</a></li>
                                 }
                             }
                             if (pageCurrent > 0 && pageCurrent < numSize)
                             {
                                 <li class="page-item">
-                                    <a aria-label="Next" class="page-link" href="@Url.Action("Index", "Ranks", new {page = pageCurrent+1 })" tabRanks="-1">
+                                    <a aria-label="Next" class="page-link" href="@Url.Action("Index", "Ranks", new {page = pageCurrent+1, _pageSize = ViewBag.pageSize })" tabRanks="-1">
                                         <span aria-hidden="true">&#10095;</span>
                                     </a>
                                 </li>
@@ -126,18 +115,17 @@
                 </nav>
             </div>
             <div class="row">
-                @using (Html.BeginForm("Index", "Button"))
-                {
-                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="5">
+
+                    <a class="btn btn-sm col-1 btn-dark text-light" asp-controller="Ranks" asp-action="Index" asp-route-_pageSize="5">
                         5
-                    </button>
-                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="10">
+                    </a>
+                    <a class="btn btn-sm col-1 btn-dark text-light" asp-controller="Ranks" asp-action="Index" asp-route-_pageSize="10">
                         10
-                    </button>
-                    <button class="btn btn-sm col-1 btn-dark text-light" type="submit" name="itemsPerSize" value="20">
+                    </a>
+                    <a class="btn btn-sm col-1 btn-dark text-light" asp-controller="Ranks" asp-action="Index" asp-route-_pageSize="20">
                         20
-                    </button>
-                }
+                    </a>
+                
 
             </div>
         </div>
